@@ -6,11 +6,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /test/
+RewriteBase /Portfolio-web/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /test/index.php [L]
+RewriteRule . /Portfolio-web/index.php [L]
 </IfModule>
 
 # END WordPress
@@ -18,7 +18,7 @@ RewriteRule . /test/index.php [L]
 # The directives (lines) between "BEGIN Simply Static" and "END Simply Static" are
 # dynamically generated, and should only be modified via WordPress filters.
 # Any changes to the directives between these markers will be overwritten.
-<Files "C:\xampp\htdocs\test/wp-content/uploads\simply-static\11773d5eecff56accb2385d00334ce55-debug.txt">
+<Files "C:\xampp\htdocs\portfolio-web/wp-content/uploads\simply-static\1aab3253f0f70fcd93ab55be692bf082-debug.txt">
 require all denied
 require host localhost
 </Files>
